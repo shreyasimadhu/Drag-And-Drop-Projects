@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Drop and Drug</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <center>
+    <h2>Drag and Drop</h2>
+    <hr>
+    <div id="maindiv" ondrop="drop(event)" ondragover="allowDrop(event)"></div> <br>
+    <img id="draganddrop" src="Asp.png" draggable="true" ondragstart="drag(event)" width="336" height="69">
+  </center>
+
+
+
+  <br><br><br><br>
+
+
+
+  <center>
+    <h2>Drag and Drop</h2>
+    <p>Drag the image back and forth between the two div elements.</p>
+
+    <div style="display:flex;">
+      <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <img src="Asp.png" draggable="true" ondragstart="drag(event)" id="drag1" width="88" height="31">
+      </div>
+
+      <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    </div>
+  </center>
+
+
+
+
+<br>
+<hr>
+
+
+    <center>
+      <div style="display:flex;margin:0px auto;"> 
+
+        <div>
+          <svg width="300" height="200">
+            <polygon points="100,10 40,198 190,78 10,78 160,198"
+              style="fill:lime;stroke:purple;stroke-width:5;fill-rule:evenodd;" />
+              Sorry, your browser does not support inline SVG.
+          </svg>
+        </div>
+
+        <div>
+          <svg width="100" height="100">
+            <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+          </svg>
+        </div>
+
+        <div>
+          <svg height="130" width="500">
+            <defs>
+              <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" style="stop-color:rgb(255,255,0);stop-opacity:1" />
+                <stop offset="100%" style="stop-color:rgb(255,0,0);stop-opacity:1" />
+              </linearGradient>
+            </defs>
+            <ellipse cx="100" cy="70" rx="85" ry="55" fill="url(#grad1)" />
+            <text fill="#ffffff" font-size="45" font-family="Verdana" x="50" y="86">ASP</text>
+              Sorry, your browser does not support inline SVG.
+          </svg>
+        </div>
+
+      </div>
+    </center>
+
+
+
+
+<hr>
+
+
+<script src="main.js"></script>
+</body>
+</html>
